@@ -15,6 +15,7 @@
 # General
 --------------------------------------------------------------*/
 
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 :root {
     scroll-behavior: smooth;
 }
@@ -1395,7 +1396,51 @@ section {
 # Testimonials Section
 --------------------------------------------------------------*/
 
-.testimonial {
+.testimonial-para p {
+    font-family: 'Italianno', cursive;
+    font-style: italic;
+    color: gray;
+}
+
+.testimonails-container {
+    height: 23rem;
+}
+
+.slide-testimonial {
+    padding-top: 8px;
+    background: #ff9ac0;
+    box-shadow: 8px 0px 6px #242424a3;
+    /* box-shadow: 5px 0px #10101038; */
+    /* border-top-right-radius: 160px;
+    border-bottom-left-radius: 160px; */
+}
+
+.testimonial-name {
+    margin-top: 5px;
+}
+
+.testimonial-pic img {
+    height: 95px;
+    width: 95px;
+    border-radius: 50%;
+    border: 8px solid pink;
+    box-shadow: 0 0 18px #472c3e;
+}
+
+.testimonial-para p::before {
+    content: "\f10d";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+.testimonial-para p::after {
+    content: "\f10e";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+
+/* .testimonial {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1486,7 +1531,7 @@ section {
 
 .owl-next:before {
     content: "\f054";
-}
+} */
 
 
 /*--------------------------------------------------------------
@@ -2041,7 +2086,7 @@ section {
     height: 79%;
     padding-left: 11%;
     color: gray;
-    text-align: center;
+    text-align: left;
 }
 
 .contact-para p,
@@ -2858,11 +2903,11 @@ section {
 .footer {
     color: var(--color-white);
     font-size: 14px;
+    margin-top: auto;
 }
 
 .footer .footer-content {
     background-color: #00c1d5;
-    padding-top: 1rem;
 }
 
 .down-footer {
@@ -2904,6 +2949,10 @@ section {
     margin-left: auto;
     margin-right: auto;
     max-width: 32%;
+}
+
+.main-home {
+    margin-top: 0;
 }
 
 @media screen and (max-width:2740px) {
@@ -2986,60 +3035,27 @@ section {
 
 @media screen and (max-width:1280px) {
     .index-main {
-        max-width: 78%;
+        max-width: 79%;
     }
 }
 
-
-/* @media screen and (max-width:2140px) {
+@media screen and (max-width:907px) {
     .index-main {
-        max-width: 45%;
+        max-width: 70%;
     }
 }
 
-
-
-@media screen and (max-width:1940px) {
+@media screen and (max-width:900px) {
     .index-main {
-        max-width: 49%;
+        max-width: 86%;
     }
 }
 
-@media screen and (max-width:1840px) {
+@media screen and (max-width:770px) {
     .index-main {
-        max-width: 52%;
+        max-width: 92%;
     }
 }
-
-@media screen and (max-width:1740px) {
-    .index-main {
-        max-width: 55%;
-    }
-}
-
-@media screen and (max-width:1640px) {
-    .index-main {
-        max-width: 58%;
-    }
-}
-
-@media screen and (max-width:1540px) {
-    .index-main {
-        max-width: 61%;
-    }
-}
-
-@media screen and (max-width:1440px) {
-    .index-main {
-        max-width: 64%;
-    }
-}
-
-@media screen and (max-width:1340px) {
-    .index-main {
-        max-width: 71%;
-    }
-} */
 
 #hero {
     margin-top: 10rem
@@ -3197,22 +3213,27 @@ section {
 
 @media screen and (max-width:991px) {
     .deals-logo img {
-        height: 7rem;
+        height: 6rem;
+        width: 6rem;
     }
 }
 
-@media screen and (max-width:767px) {
-    .deals-mobile-view {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+@media screen and (max-width:850px) {
     .main-deals {
-        padding-bottom: 1rem;
-        text-align: center;
+        padding: 8px 1%;
     }
-    .deals-logo img {
-        height: 10rem;
+}
+
+@media screen and (max-width:785px) {
+    .main-deals {
+        padding: 8px 2%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .main-deals {
+        padding-left: 1px;
+        padding-right: 6%;
     }
 }
 
@@ -3276,14 +3297,6 @@ section {
     margin-top: -19px;
 }
 
-
-/* .price a {
-    color: black;
-    margin-top: 10px;
-    padding: 1rem;
-    background-color: rgba(255, 93, 161, 255);
-} */
-
 .deals-title {
     display: flex;
     align-items: center;
@@ -3298,6 +3311,34 @@ section {
     text-align: center;
     font-weight: 900;
     font-size: 22px;
+}
+
+@media screen and (max-width:681px) {
+    .deals-details h3 {
+        font-size: 20px;
+    }
+    .main-deals {
+        padding-right: 2%;
+    }
+    .price .current {
+        font-size: 24px;
+    }
+    .deals-details h3 {
+        font-size: 21px;
+    }
+    .details-div a {
+        width: 155px;
+    }
+}
+
+@media screen and (max-width:648px) {
+    .deals-details h3 {
+        font-size: 19px;
+    }
+    .deals-logo img {
+        height: 5rem;
+        width: 5rem;
+    }
 }
 
 .mama-saying-container {
@@ -3808,12 +3849,36 @@ button {
     justify-content: center;
 }
 
+.form-container2 {
+    padding-left: 8rem;
+}
+
 .form-container2 button {
     margin-right: 1rem;
 }
 
 .form-container2 input::placeholder {
-    font-size: 12px;
+    font-size: 10px;
+}
+
+@media screen and (max-width:1161px) {
+    .form-container2 {
+        padding-left: 0;
+    }
+    .form-container2 input::placeholder {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .form-container2 input[type="search"] {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .form-container2 input::placeholder {
+        font-size: 12px;
+    }
 }
 
 .form-container2 input[type="search"] {
@@ -4342,7 +4407,7 @@ button {
     background-color: #fefefe;
     margin: auto;
     margin-top: 10rem;
-    width: 35%;
+    width: 30%;
 }
 
 .modal-head-subsribe {
@@ -4402,11 +4467,11 @@ button {
 }
 
 .modal-heading h3 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .modal-heading p {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .modal-body {
@@ -4500,7 +4565,7 @@ button {
     }
 }
 
-.swiper-slide img {
+.featuredInMySwiper img {
     display: block;
     width: 70%;
     height: 83%;
@@ -4517,25 +4582,26 @@ button {
 }
 
 .main-about-our-business {
-    padding: 3px 0;
+    margin-top: 10rem;
+    padding: 3px 0 14px 0;
     width: 100%;
     background-color: rgb(255, 95, 162);
 }
 
 .main-about-our-business .inner-our-business {
     width: 100%;
-    /* background-image: linear-gradient(315deg, #485461 0%, #28313b 74%); */
     background: #000;
     color: white;
     display: flex;
     justify-content: center;
-    padding: 0 8px;
+    padding: 8px 8px;
 }
 
 .main-about-our-business .inner-our-business .intro {
-    width: 100%;
     padding-top: 1rem;
-    text-align: left;
+    width: 50%;
+    padding-top: 1rem;
+    text-align: center;
 }
 
 .main-about-our-business .inner-our-business .intro p {
@@ -4546,7 +4612,7 @@ button {
     color: rgb(255, 95, 162);
 }
 
-.main-about-our-business .inner-our-business .intro h4 {
+.main-about-our-business .inner-our-business .intro h5 {
     text-align: center;
     color: #00c1d5;
 }
@@ -4647,6 +4713,7 @@ button {
         height: 50px;
         display: block;
         background-color: #ef5e9f;
+        z-index: 1;
     }
     .mobile.footer-nav-container ul li a {
         position: relative;
@@ -4897,4 +4964,10 @@ iframe {
 .sign-nav:hover:before,
 .sign-nav.active:before {
     transform: scaleX(1) !important;
+}
+
+.login-form-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }

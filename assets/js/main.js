@@ -246,17 +246,17 @@ document.addEventListener('DOMContentLoaded', () => {
     /**
      * Testimonials Slider
      */
-    new Swiper('.testimonials-slider', {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true
-        },
+    // new Swiper('.testimonials-slider', {
+    //     slidesPerView: 3,
+    //     slidesPerGroup: 3,
+    //     loop: true,
+    //     loopFillGroupWithBlank: true,
+    //     pagination: {
+    //         el: ".swiper-pagination",
+    //         clickable: true
+    //     },
 
-    });
+    // });
     // new Swiper('.testimonials-slider', {
     //     speed: 600,
     //     loop: true,
@@ -272,7 +272,14 @@ document.addEventListener('DOMContentLoaded', () => {
     //     }
     // });
 
-
+    new Swiper(".testimonialSwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
 
     /**
      * Animation on scroll function and init
