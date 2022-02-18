@@ -970,8 +970,6 @@ section {
     font-weight: 700;
 }
 
-
-
 .cta .content h3 em {
     font-style: normal;
     position: relative;
@@ -1988,8 +1986,6 @@ section {
     padding-top: 1rem;
 }
 
-
-
 .contact-heading {
     background-color: #485461;
     background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
@@ -2014,13 +2010,12 @@ section {
     padding-left: 12%;
 }
 
-.contact-form-container{
-height: 79%;
-display: flex;
-flex-direction: column;
-justify-content: center;
+.contact-form-container {
+    height: 79%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
 
 .video {
     display: flex;
@@ -2057,12 +2052,12 @@ justify-content: center;
     line-height: 28px;
 }
 
-
 .parents-para,
 .business-para {
     padding-left: 11%;
     padding-top: 1rem;
 }
+
 @media screen and (max-width:757px) {
     .contact-para {
         margin-top: 1rem;
@@ -2178,8 +2173,6 @@ justify-content: center;
 /*--------------------------------------------------------------
 # Blog Home Posts List
 --------------------------------------------------------------*/
-
-
 
 .blog .posts-list article {
     box-shadow: 0 4px 16px rgba(var(--color-black-rgb), 0.1);
@@ -2910,8 +2903,93 @@ justify-content: center;
     margin-top: 10rem;
     margin-left: auto;
     margin-right: auto;
-    max-width: 74%;
+    max-width: 32%;
 }
+
+@media screen and (max-width:2740px) {
+    .index-main {
+        max-width: 36%;
+    }
+}
+
+@media screen and (max-width:2540px) {
+    .index-main {
+        max-width: 39%;
+    }
+}
+
+@media screen and (max-width:2340px) {
+    .index-main {
+        max-width: 42%;
+    }
+}
+
+@media screen and (max-width:2140px) {
+    .index-main {
+        max-width: 46%;
+    }
+}
+
+@media screen and (max-width:2040px) {
+    .index-main {
+        max-width: 48%;
+    }
+}
+
+@media screen and (max-width:1940px) {
+    .index-main {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width:1840px) {
+    .index-main {
+        max-width: 54%;
+    }
+}
+
+@media screen and (max-width:1740px) {
+    .index-main {
+        max-width: 57%;
+    }
+}
+
+@media screen and (max-width:1640px) {
+    .index-main {
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width:1540px) {
+    .index-main {
+        max-width: 64%;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .index-main {
+        max-width: 67%;
+    }
+}
+
+@media screen and (max-width:1340px) {
+    .index-main {
+        max-width: 74%;
+    }
+}
+
+@media screen and (max-width:1340px) {
+    .index-main {
+        max-width: 74%;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .index-main {
+        max-width: 78%;
+    }
+}
+
 
 /* @media screen and (max-width:2140px) {
     .index-main {
@@ -2919,11 +2997,7 @@ justify-content: center;
     }
 }
 
-@media screen and (max-width:2040px) {
-    .index-main {
-        max-width: 47%;
-    }
-}
+
 
 @media screen and (max-width:1940px) {
     .index-main {
@@ -2966,8 +3040,6 @@ justify-content: center;
         max-width: 71%;
     }
 } */
-
-
 
 #hero {
     margin-top: 10rem
@@ -3222,7 +3294,6 @@ justify-content: center;
     position: relative;
 }
 
-
 .deals-title h3 {
     text-align: center;
     font-weight: 900;
@@ -3242,7 +3313,8 @@ justify-content: center;
     background-color: #7ae1bf;
     color: black;
 }
-.mama-saying-text-container h3{
+
+.mama-saying-text-container h3 {
     font-size: 22px;
     font-weight: 900;
 }
@@ -3299,7 +3371,6 @@ button {
     text-transform: uppercase !important;
     border-radius: 0 !important;
 }
-
 
 .deals-details .fill {
     color: rgb(239 94 159);
@@ -4802,27 +4873,28 @@ iframe {
     transform: scaleX(1);
 }
 
-.login-nav{
+.login-nav {
     padding-right: 0px !important;
 }
-.sign-nav{
+
+.sign-nav {
     padding-left: 0px !important;
 }
-
 
 .login-nav:before {
     width: 129% !important;
 }
+
 .login-nav:hover:before,
-.login-nav.active:before
- {
+.login-nav.active:before {
     transform: scaleX(0.5) !important;
 }
+
 .sign-nav:before {
     width: 75% !important;
 }
+
 .sign-nav:hover:before,
-.sign-nav.active:before
- {
+.sign-nav.active:before {
     transform: scaleX(1) !important;
 }
