@@ -1396,6 +1396,15 @@ section {
 # Testimonials Section
 --------------------------------------------------------------*/
 
+.testimonials-slider {
+    width: 100%;
+    height: 100%;
+    background-color: #80808012;
+}
+.testimonialSwiper{
+    padding: 7px 7px;
+}
+
 .testimonial-para p {
     font-family: 'Italianno', cursive;
     font-style: italic;
@@ -1409,7 +1418,9 @@ section {
 .slide-testimonial {
     padding-top: 8px;
     background: #ff9ac0;
-    box-shadow: 8px 0px 6px #242424a3;
+    box-shadow: 8px 8px 6px #242424a3, -3px -2px 6px #242424a3;
+    border-bottom-left-radius: 26px;
+    border-top-right-radius: 26px;
     /* box-shadow: 5px 0px #10101038; */
     /* border-top-right-radius: 160px;
     border-bottom-left-radius: 160px; */
@@ -2945,12 +2956,13 @@ section {
 }
 
 .index-main {
-    margin-top: 10rem;
     margin-left: auto;
     margin-right: auto;
     max-width: 32%;
 }
-
+.mtop{
+    margin-top: 10rem;
+}
 .main-home {
     margin-top: 0;
 }
@@ -3021,11 +3033,7 @@ section {
     }
 }
 
-@media screen and (max-width:1340px) {
-    .index-main {
-        max-width: 74%;
-    }
-}
+
 
 @media screen and (max-width:1340px) {
     .index-main {
@@ -4517,13 +4525,8 @@ button {
     margin-top: 1rem
 }
 
-.testimonials-slider {
-    width: 100%;
-    height: 100%;
-    background-color: #80808012;
-}
 
-@media screen and (max-width:992px) {
+/* @media screen and (max-width:992px) {
     .swiper {
         width: 70%;
     }
@@ -4563,7 +4566,7 @@ button {
     .swiper {
         height: 27rem;
     }
-}
+} */
 
 .featuredInMySwiper img {
     display: block;
