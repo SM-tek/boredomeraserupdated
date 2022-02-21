@@ -15,7 +15,9 @@
 # General
 --------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap'); */
+
 :root {
     scroll-behavior: smooth;
 }
@@ -209,7 +211,7 @@ section {
 }
 
 .header .logo img {
-    max-height: 142px;
+    max-height: 117px;
     margin-right: 6px;
 }
 
@@ -785,12 +787,12 @@ section {
 
 .service-item-main {
     display: inline-block;
-    width: 155px;
+    width: 146px;
     margin-bottom: 1rem;
     transition: all ease-in-out 0.4s;
     background: rgba(59, 62, 67, 255);
     border-radius: 10px;
-    height: 8.5rem;
+    height: 8.3rem;
     justify-content: center;
 }
 
@@ -1401,12 +1403,13 @@ section {
     height: 100%;
     background-color: #80808012;
 }
-.testimonialSwiper{
+
+.testimonialSwiper {
     padding: 7px 7px;
 }
 
 .testimonial-para p {
-    font-family: 'Italianno', cursive;
+    /* font-family: 'Italianno', cursive; */
     font-style: italic;
     color: gray;
 }
@@ -1419,11 +1422,17 @@ section {
     padding-top: 8px;
     background: #ff9ac0;
     box-shadow: 8px 8px 6px #242424a3, -3px -2px 6px #242424a3;
-    border-bottom-left-radius: 26px;
-    border-top-right-radius: 26px;
-    /* box-shadow: 5px 0px #10101038; */
-    /* border-top-right-radius: 160px;
-    border-bottom-left-radius: 160px; */
+    transition: transform .5s;
+    transform: scale(0.9);
+}
+
+.slide-testimonial:hover {
+    transform: scale(1);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.slide-testimonial:hover .testimonialSwiper {
+    padding: 0px 0px;
 }
 
 .testimonial-name {
@@ -2037,9 +2046,14 @@ section {
 # Contact Section
 --------------------------------------------------------------*/
 
+.contact {
+    height: 531px;
+}
+
 #contact {
     padding: 0;
     padding-top: 1rem;
+    padding-left: 1%;
 }
 
 .contact-heading {
@@ -2062,15 +2076,9 @@ section {
     width: 26rem;
 }
 
-#contact-form {
+.contact-form {
+    padding-top: 5%;
     padding-left: 12%;
-}
-
-.contact-form-container {
-    height: 79%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .video {
@@ -2949,6 +2957,7 @@ section {
     display: flex;
     align-items: center;
     height: 7rem;
+    box-shadow: 0 2px #ff5fa2, 0 4px black;
 }
 
 #main {
@@ -2960,9 +2969,11 @@ section {
     margin-right: auto;
     max-width: 32%;
 }
-.mtop{
+
+.mtop {
     margin-top: 10rem;
 }
+
 .main-home {
     margin-top: 0;
 }
@@ -3033,8 +3044,6 @@ section {
     }
 }
 
-
-
 @media screen and (max-width:1340px) {
     .index-main {
         max-width: 74%;
@@ -3043,7 +3052,7 @@ section {
 
 @media screen and (max-width:1280px) {
     .index-main {
-        max-width: 79%;
+        max-width: 83%;
     }
 }
 
@@ -3315,6 +3324,38 @@ section {
     position: relative;
 }
 
+.deals-title a {
+    color: black;
+    font-size: 17px;
+    font-weight: 900;
+    position: absolute;
+    right: 10%;
+    transition: 0.3s ease all;
+}
+
+.deals-title a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.deals-title a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.deals-title a:hover {
+    color: white;
+}
+
 .deals-title h3 {
     text-align: center;
     font-weight: 900;
@@ -3395,14 +3436,6 @@ section {
 .deals-container {
     padding-right: 25%;
     padding-left: 25%;
-}
-
-.deals-title a {
-    color: black;
-    font-size: 17px;
-    font-weight: 900;
-    position: absolute;
-    right: 2%;
 }
 
 .price i {
@@ -3857,16 +3890,12 @@ button {
     justify-content: center;
 }
 
-.form-container2 {
-    padding-left: 8rem;
-}
-
 .form-container2 button {
     margin-right: 1rem;
 }
 
 .form-container2 input::placeholder {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 @media screen and (max-width:1161px) {
@@ -4615,7 +4644,7 @@ button {
     color: rgb(255, 95, 162);
 }
 
-.main-about-our-business .inner-our-business .intro h5 {
+.main-about-our-business .inner-our-business .intro h6 {
     text-align: center;
     color: #00c1d5;
 }

@@ -39,26 +39,8 @@
   ======================================================== -->
     <style>
         .featuredInMySwiper {
-            width: 50%;
+            width: 100%;
             height: 100%;
-        }
-        
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
         }
         
         .img-container {
@@ -66,7 +48,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 500px;
             height: 151px;
         }
         
@@ -74,6 +55,13 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
+            border: 2px solid black;
+        }
+        
+        .swiper {
+            width: 100%;
+            height: 100%;
+            padding-bottom: 33px;
         }
     </style>
 </head>
@@ -85,6 +73,7 @@
         <div class="container-fluid d-flex align-items-center justify-content-center">
             <nav id="navbar" class="navbar">
                 <ul>
+                    <li><a class="nav-link scrollto" href="index.html">Home</a></li>
                     <li><a class="nav-link scrollto" href="about.html">About</a></li>
                     <li><a class="nav-link scrollto" href="parents.html">Parents</a></li>
                     <li><a class="nav-link scrollto" href="businesses.html">Businesses</a></li>
@@ -153,7 +142,7 @@
     </section> -->
 
 
-   <main class="index-main mtop">
+    <main class="index-main mtop">
         <!-- ======= Contact Section ======= -->
         <section id="contact">
             <div class="container contact">
@@ -177,40 +166,52 @@
         </section>
 
 
-        <div class="mama-saying-container">
-            <div class="mama-saying-text-container">
+        <div class="mama-saying-container ">
+            <div class="mama-saying-text-container ">
                 <h3>
                     FEATURED IN
                 </h3>
             </div>
-        </div>
-        <!-- End Testimonials Section -->
-        <div class="swiper featuredInMySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="img-container">
-                        <img src="assets/img/featured-in/1.png" alt="">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="img-container">
-                        <img src="assets/img/featured-in/2.png" alt="">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="img-container">
-                        <img src="assets/img/featured-in/3.png" alt="">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="img-container">
-                        <img src="assets/img/featured-in/5.png" alt="">
-                    </div>
-                </div>
+            <div class="index-main">
+                <div class="swiper featuredInMySwiper ">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide ">
+                            <div class="img-container ">
+                                <img src="assets/img/featured-in/1.png " alt=" ">
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="img-container ">
+                                <img src="assets/img/featured-in/2.jpg " alt=" ">
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="img-container ">
+                                <img src="assets/img/featured-in/3.png " alt=" ">
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="img-container ">
+                                <img src="assets/img/featured-in/4.png " alt=" ">
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="img-container ">
+                                <img src="assets/img/featured-in/5.png " alt=" ">
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="img-container ">
+                                <img src="assets/img/featured-in/6.png " alt=" ">
+                            </div>
+                        </div>
 
+                    </div>
+                    <div class="swiper-pagination "></div>
+                </div>
             </div>
-            <div class="swiper-pagination"></div>
         </div>
+
 
     </main>
 
@@ -290,45 +291,33 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".featuredInMySwiper", {
-            slidesPerView: 2,
+        new Swiper(".featuredInMySwiper", {
+            slidesPerView: 3,
             spaceBetween: 30,
-            slidesPerGroup: 2,
-            loop: true,
-            loopFillGroupWithBlank: true,
             pagination: {
                 el: ".swiper-pagination",
-                clickable: true
+                clickable: true,
             },
-
         });
 
         window.addEventListener('resize', function(event) {
             if ($(window).width() <= 515) {
-                swiper = new Swiper(".featuredInMySwiper", {
+                new Swiper(".featuredInMySwiper", {
                     slidesPerView: 1,
                     spaceBetween: 30,
-                    slidesPerGroup: 1,
-                    loop: true,
-                    loopFillGroupWithBlank: true,
                     pagination: {
                         el: ".swiper-pagination",
-                        clickable: true
+                        clickable: true,
                     },
-
                 });
             } else {
-                swiper = new Swiper(".featuredInMySwiper", {
-                    slidesPerView: 2,
+                new Swiper(".featuredInMySwiper", {
+                    slidesPerView: 3,
                     spaceBetween: 30,
-                    slidesPerGroup: 2,
-                    loop: true,
-                    loopFillGroupWithBlank: true,
                     pagination: {
                         el: ".swiper-pagination",
-                        clickable: true
+                        clickable: true,
                     },
-
                 });
             }
         });

@@ -52,6 +52,7 @@
         <div class="container-fluid d-flex align-items-center justify-content-center">
             <nav id="navbar" class="navbar">
                 <ul>
+                    <li><a class="nav-link scrollto" href="index.html">Home</a></li>
                     <li><a class="nav-link scrollto" href="about.html">About</a></li>
                     <li><a class="nav-link scrollto" href="parents.html">Parents</a></li>
                     <li><a class="nav-link scrollto" href="businesses.html">Businesses</a></li>
@@ -120,32 +121,44 @@
     </section> -->
 
 
-   <main class="index-main mtop">
+    <main class="index-main mtop">
         <!-- ======= Contact Section ======= -->
         <section class="signup-form">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <form class="row g-3">
+                        <form action="index2.html" class="row g-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input required type="text" class="form-control" id="firstName">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input required type="text" class="form-control" id="lastName">
+                            </div>
                             <div class="col-md-6">
                                 <label for="inputEmail4" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="inputEmail4">
+                                <input required type="email" class="form-control" id="inputEmail4">
                             </div>
                             <div class="col-md-6">
                                 <label for="inputPassword4" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="inputPassword4">
+                                <input required type="password" class="form-control" id="inputPassword4">
                             </div>
                             <div class="col-12">
                                 <label for="inputAddress" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                <input required type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
                             </div>
                             <div class="col-12">
                                 <label for="inputAddress2" class="form-label">Address 2</label>
-                                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                <input required type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                            </div>
+                            <div class="col-12">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input required type="number" class="form-control" id="phone" placeholder="">
                             </div>
                             <div class="col-md-6">
                                 <label for="inputCity" class="form-label">City</label>
-                                <input type="text" class="form-control" id="inputCity">
+                                <input required type="text" class="form-control" id="inputCity">
                             </div>
                             <div class="col-md-4">
                                 <label for="inputState" class="form-label">State</label>
@@ -156,11 +169,13 @@
                             </div>
                             <div class="col-md-2">
                                 <label for="inputZip" class="form-label">Zip</label>
-                                <input type="text" class="form-control" id="inputZip">
+                                <input required type="text" class="form-control" id="inputZip">
                             </div>
                             <div class="col-12">
 
-                                <button type="submit" class="btn btn-primary">Sign Up</button>
+                                <div style="display: flex; justify-content: center;">
+                                    <button type="submit" class="btn btn-primary">Sing up</button>
+                                </div>
                             </div>
                         </form>
                     </div>
