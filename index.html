@@ -306,22 +306,22 @@
     </div>
     <div class="index-main">
         <div class="main-deals">
-            <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-2 deals-mobile">
                 <div class="deals-logo">
                     <img src="assets/img/kfclogo.png" class="img-fluid" />
                 </div>
             </div>
-            <div class="col-lg-7 col-md-7 col-sm-7 col-7">
+            <div class="col-lg-7 col-md-7 col-sm-7 col-7 deals-mobile">
                 <div class="deals-details">
                     <h3>Kentucky fried chicken</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <div>
+                    <div class="reviews">
                         <i class="fas fa-star fill"></i><i class="fas fa-star fill"></i><i class="fas fa-star fill"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         <span>345 Reviews</span>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-3 deals-mobile">
                 <div class="price">
                     <p class="current">$99.99</p>
                     <p class="ff">was $14.99</p>
@@ -442,61 +442,6 @@
                 </div>
             </div>
         </div>
-        <!-- <section id="testimonials " class="testimonials ">
-                <div data-aos="fade-up ">
-
-                    <div class="testimonials-slider swiper ">
-                        <div class="swiper-wrapper ">
-
-                            <div class="swiper-slide ">
-                                <div class="testimonial ">
-                                    <div class="pic ">
-                                        <img src="https://www.w3schools.com/howto/img_avatar.png ">
-                                    </div>
-                                    <div class="testimonial-profile ">
-                                        <h3 class="title ">williamson</h3>
-                                    </div>
-                                    <p class="description ">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius eros consequat auctor gravida. Fusce tristique lacus at urna sollicitudin pulvinar. Suspendisse hendrerit ultrices mauris.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide ">
-                                <div class="testimonial ">
-                                    <div class="pic ">
-                                        <img src="https://www.w3schools.com/howto/img_avatar2.png ">
-                                    </div>
-                                    <div class="testimonial-profile ">
-                                        <h3 class="title ">Sara</h3>
-                                    </div>
-                                    <p class="description ">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius eros consequat auctor gravida. Fusce tristique lacus at urna sollicitudin pulvinar. Suspendisse hendrerit ultrices mauris.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide ">
-                                <div class="testimonial ">
-                                    <div class="pic ">
-                                        <img src="https://www.w3schools.com/howto/img_avatar.png ">
-                                    </div>
-                                    <div class="testimonial-profile ">
-                                        <h3 class="title ">williamson</h3>
-                                    </div>
-                                    <p class="description ">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius eros consequat auctor gravida. Fusce tristique lacus at urna sollicitudin pulvinar. Suspendisse hendrerit ultrices mauris.
-                                    </p>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <div class="swiper-pagination "></div>
-                    </div>
-
-                </div>
-            </section> -->
     </div>
 
     <div class="mama-saying-container ">
@@ -730,36 +675,55 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js " integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin=" anonymous "></script>
     <!-- Initialize Swiper -->
     <script>
-        new Swiper(".featuredInMySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-
-        window.addEventListener('resize', function(event) {
-            if ($(window).width() <= 515) {
-                new Swiper(".featuredInMySwiper", {
-                    slidesPerView: 1,
-                    spaceBetween: 30,
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true,
-                    },
-                });
-            } else {
-                new Swiper(".featuredInMySwiper", {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true,
-                    },
-                });
-            }
-        });
+        if (screen.width <= 414) {
+            new Swiper(".featuredInMySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        } else if (screen.width <= 558) {
+            new Swiper(".featuredInMySwiper", {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        } else {
+            new Swiper(".featuredInMySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        }
+        // window.addEventListener('resize', function(event) {
+        //     if ($(window).width() <= 515) {
+        //         new Swiper(".featuredInMySwiper", {
+        //             slidesPerView: 1,
+        //             spaceBetween: 30,
+        //             pagination: {
+        //                 el: ".swiper-pagination",
+        //                 clickable: true,
+        //             },
+        //         });
+        //     } else {
+        //         new Swiper(".featuredInMySwiper", {
+        //             slidesPerView: 3,
+        //             spaceBetween: 30,
+        //             pagination: {
+        //                 el: ".swiper-pagination",
+        //                 clickable: true,
+        //             },
+        //         });
+        //     }
+        // });
     </script>
 </body>
 

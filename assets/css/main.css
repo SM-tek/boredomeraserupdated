@@ -1415,7 +1415,7 @@ section {
 }
 
 .testimonails-container {
-    height: 23rem;
+    height: 28rem;
 }
 
 .slide-testimonial {
@@ -1457,6 +1457,18 @@ section {
     content: "\f10e";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
+}
+
+@media screen and (max-width:1000px) {
+    .testimonails-container {
+        height: 25rem;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .testimonails-container {
+        height: 22rem;
+    }
 }
 
 
@@ -2046,14 +2058,9 @@ section {
 # Contact Section
 --------------------------------------------------------------*/
 
-.contact {
-    height: 531px;
-}
-
 #contact {
     padding: 0;
     padding-top: 1rem;
-    padding-left: 1%;
 }
 
 .contact-heading {
@@ -2073,7 +2080,7 @@ section {
 .contact-img {
     box-shadow: 5px -4px 10px grey, 0px 4px 10px grey;
     height: 79%;
-    width: 26rem;
+    width: 100%;
 }
 
 .contact-form {
@@ -2122,10 +2129,47 @@ section {
     padding-top: 1rem;
 }
 
+.parents-btns {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center
+}
+
+@media screen and (max-width:1026px) {
+    .parents-btns {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width:882px) {
+    .parents-btns {
+        padding-left: 11%;
+        display: block;
+    }
+}
+
 @media screen and (max-width:757px) {
     .contact-para {
         margin-top: 1rem;
         margin-left: 0;
+    }
+}
+
+@media screen and (max-width:654px) {
+    .parents-btns a {
+        width: 96px;
+        font-size: 11px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .contact-para {
+        margin-top: 0;
+        padding-left: 0;
     }
 }
 
@@ -2135,13 +2179,6 @@ section {
     padding: 5px 10px;
     outline: none;
 }
-
-
-/* [placeholder]:focus::-webkit-input-placeholder {
-    transition: text-indent 0.4s 0.4s ease;
-    text-indent: -100%;
-    opacity: 1;
-} */
 
 @-webkit-keyframes animate-loading {
     0% {
@@ -2626,8 +2663,14 @@ section {
 
 .blog-img {
     margin-bottom: 1rem;
+    height: 34rem;
     border: 9px solid white;
     box-shadow: 5px -4px 10px grey, 0px 4px 10px grey;
+}
+
+.blog-img img {
+    height: 100%;
+    width: 100%;
 }
 
 .blog-social-links ul {
@@ -3070,7 +3113,7 @@ section {
 
 @media screen and (max-width:770px) {
     .index-main {
-        max-width: 92%;
+        max-width: 94%;
     }
 }
 
@@ -3362,6 +3405,26 @@ section {
     font-size: 22px;
 }
 
+.deals-details h3 {
+    font-weight: 900;
+    color: gray;
+    font-size: 23px;
+}
+
+.deals-details .fill {
+    color: rgb(239 94 159);
+}
+
+.deals-details p {
+    font-size: 14px;
+}
+
+.deals-details span {
+    font-weight: 400;
+    font-size: 12px;
+    color: gray;
+}
+
 @media screen and (max-width:681px) {
     .deals-details h3 {
         font-size: 20px;
@@ -3376,17 +3439,122 @@ section {
         font-size: 21px;
     }
     .details-div a {
-        width: 155px;
+        width: 116px;
     }
 }
 
 @media screen and (max-width:648px) {
     .deals-details h3 {
-        font-size: 19px;
+        font-size: 18px;
+        font-weight: 900;
     }
     .deals-logo img {
         height: 5rem;
         width: 5rem;
+    }
+}
+
+@media screen and (max-width:506px) {
+    .price .ff {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .price .ff {
+        font-size: 13px;
+    }
+    .deals-details p {
+        font-size: 13px;
+    }
+    .price .current {
+        font-size: 20px;
+    }
+    .details-div a {
+        width: 110px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .price .ff {
+        font-size: 12px;
+    }
+    .deals-details p {
+        font-size: 12px;
+    }
+    .price .current {
+        font-size: 18px;
+    }
+    .details-div a {
+        width: 100px;
+        font-size: 14px;
+    }
+    .deals-details span {
+        font-size: 11px;
+    }
+    .deals-details i {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:405px) {
+    .price .ff {
+        font-size: 10px;
+    }
+    .deals-details h3 {
+        font-size: 16px;
+    }
+    .deals-details p {
+        font-size: 11px;
+    }
+    .price .current {
+        font-size: 16px;
+    }
+    .details-div a {
+        width: 100px;
+        font-size: 14px;
+    }
+    .deals-details span {
+        font-size: 11px;
+    }
+    .deals-details i {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .deals-title {
+        justify-content: flex-start;
+        padding-left: 4%;
+    }
+    .main-deals {
+        flex-direction: column;
+    }
+    .deals-mobile {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .deals-details h3 {
+        font-size: 23px;
+        text-align: center;
+    }
+    .price .current {
+        font-size: 27px;
+    }
+    .price .ff {
+        font-size: 16px;
+    }
+    .deals-details p,
+    .deals-details span,
+    .deals-details i {
+        font-size: 16px;
+        text-align: center;
+    }
+    .deals-details .reviews {
+        text-align: center;
     }
 }
 
@@ -3452,26 +3620,6 @@ a,
 button {
     text-transform: uppercase !important;
     border-radius: 0 !important;
-}
-
-.deals-details .fill {
-    color: rgb(239 94 159);
-}
-
-.deals-details h3 {
-    font-weight: 900;
-    color: gray;
-    font-size: 23px;
-}
-
-.deals-details p {
-    font-size: 14px;
-}
-
-.deals-details span {
-    font-weight: 400;
-    font-size: 12px;
-    color: gray;
 }
 
 
@@ -3909,7 +4057,7 @@ button {
 
 @media screen and (max-width:768px) {
     .form-container2 input[type="search"] {
-        width: 50%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -4760,6 +4908,42 @@ button {
     }
     .mobile.footer-nav-container ul {
         padding-left: 0;
+    }
+}
+
+@media screen and (max-width:408px) {
+    .mobile.footer-nav-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media screen and (max-width:386px) {
+    .mobile.footer-nav-container ul li a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:336px) {
+    .mobile.footer-nav-container ul li a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .mobile.footer-nav-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width:280px) {
+    .mobile.footer-nav-container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .mobile.footer-nav-container ul li a {
+        font-size: 12px;
     }
 }
 

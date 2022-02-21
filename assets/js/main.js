@@ -272,15 +272,36 @@ document.addEventListener('DOMContentLoaded', () => {
     //     }
     // });
 
-    new Swiper(".testimonialSwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
 
+    if (screen.width <= 560) {
+        new Swiper(".testimonialSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    } else if (screen.width <= 1000) {
+        console.log('woking');
+        new Swiper(".testimonialSwiper", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    } else {
+        new Swiper(".testimonialSwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    }
     /**
      * Animation on scroll function and init
      */
