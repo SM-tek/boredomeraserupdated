@@ -5187,3 +5187,131 @@ iframe {
     margin-right: auto;
     width: 50%;
 }
+
+.admin-form-body {
+    background-color: #347ab6;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.admin-form-container {
+    background-color: white;
+    padding: 46px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.admin-form-container input {
+    height: 58px;
+}
+
+.admin-form-container .signin-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.admin-form-container .signin-btn button {
+    width: 50%;
+    background-color: #1374c5;
+    height: 3.5rem;
+}
+
+.admin-form-container label {
+    font-weight: 700;
+}
+
+.admin-form-container h1 {
+    text-align: center;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10000;
+    display: flex;
+}
+
+.overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    /* margin: 70px auto; */
+    padding: 20px 42px;
+    background: #fff;
+    border-radius: 5px;
+    width: 44%;
+    position: relative;
+    margin: auto;
+    padding-bottom: 70px;
+    /* transition: all 5s ease-in-out; */
+    /* margin-top: 20rem; */
+}
+
+.popup h1 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+    /* font-family: Tahoma, Arial, sans-serif; */
+}
+
+.popup .close1 {
+    position: absolute;
+    top: 0px;
+    right: 13px;
+    transition: all 200ms;
+    font-size: 29px;
+    font-weight: bold;
+    text-decoration: none;
+    color: gray;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.popup .close1:hover {
+    color: #ff9ac0;
+}
+
+
+/* .popup .content {
+    max-height: 30%;
+} */
+
+.popup .content input,
+.popup .content button {
+    height: 3rem;
+}
+
+.popup .content .content-text {
+    margin: 1rem 0px;
+}
+
+.popup .content .privacy-text {
+    margin-top: 2rem;
+    font-size: 13px;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+    .popup {
+        width: 70%;
+    }
+}

@@ -434,3 +434,17 @@ if (btn) {
 
     }
 }
+
+const popbtn = document.getElementById('popbtn');
+const closepop = document.getElementById('closepop');
+if (popbtn) {
+    popbtn.addEventListener('click', () => {
+        const popup1 = document.getElementById('popup1');
+        popup1.classList.add('active');
+        document.body.classList.add('bodytag')
+    })
+    closepop.addEventListener('click', () => {
+        popup1.classList.remove('active')
+        document.body.classList.remove('bodytag')
+    })
+}
