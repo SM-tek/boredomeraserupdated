@@ -2118,8 +2118,26 @@ section {
 }
 
 .contact-form {
-    padding-top: 5%;
-    padding-left: 12%;
+    padding-top: 6%;
+    padding-left: 10%;
+}
+
+@media screen and (max-width:1088px) {
+    .contact-form {
+        padding-top: 0;
+    }
+    .contact-img {
+        height: 95%;
+    }
+    #contact {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .contact-form {
+        padding-left: 0;
+    }
 }
 
 .video {
@@ -2203,6 +2221,16 @@ section {
 @media screen and (max-width:575px) {
     .contact-para {
         margin-top: 0;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .parents-para,
+    .business-para {
+        padding-left: 0;
+    }
+    .parents-btns {
         padding-left: 0;
     }
 }
@@ -5358,5 +5386,15 @@ input[type=number] {
 @media screen and (max-width: 400px) {
     .popup-email {
         width: 94%;
+    }
+}
+
+.margin-container {
+    margin-top: -7rem;
+}
+
+@media screen and (max-width:1089px) {
+    .margin-container {
+        margin-top: 0rem;
     }
 }
