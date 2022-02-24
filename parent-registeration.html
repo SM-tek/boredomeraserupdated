@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Businesses</title>
+    <title>Parent Registeration</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -48,7 +48,7 @@
                     <li><a class="nav-link scrollto" href="index.html">Home</a></li>
                     <li><a class="nav-link scrollto" href="about.html">About</a></li>
                     <li><a class="nav-link scrollto" href="parents.html">Parents</a></li>
-                    <li><a class="nav-link scrollto active" href="businesses.html">Businesses</a></li>
+                    <li><a class="nav-link scrollto" href="businesses.html">Businesses</a></li>
                     <li><a class="nav-link scrollto" href="media.html">Media</a></li>
                     <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
                         <img src="assets/img/logo.png" alt="BoredomEraser">
@@ -69,18 +69,19 @@
 
     <!-- ======= Second Nav Bar ======= -->
 
-    <!-- 
-    <section id="main-nav">
+
+
+    <!-- <section id="main-nav">
         <div id="sec-nav">
             <div class="page-name">
-                Parents
+                About
             </div>
             <i class="mobile-toggle bi bi-list" aria-controls="sec-navigation" aria-expanded="false"> 
               </i>
             <nav id="sec-navigation" class="sec-nav">
                 <ul class="flex sec-navigation" data-visible="false">
                     <li>
-                        <a class="sec-nav-active" href="index.html">
+                        <a href="index.html">
                             Home
                         </a>
                     </li>
@@ -109,40 +110,59 @@
                 </ul>
             </nav>
         </div>
+
     </section> -->
 
 
-    <main class="index-main mtop">
+
+    <div class="row mtop">
+        <div class="col-md-12">
+            <div class="business-detail">
+                <p>
+                    PARENT
+                    <br/> REGISTERATION
+                </p>
+            </div>
+        </div>
+    </div>
+    <main class="index-main">
         <!-- ======= Contact Section ======= -->
-        <section id="contact">
-            <div class="container contact">
+        <section>
+            <div class="container form-container">
                 <div class="row">
-                    <div class="col-lg-5">
-                        <div class="contact-img">
-                            <img src="assets/img/businesses/WhatsApp Image 2020-04-29 at 10.14.16 AM (3).jpeg" class="img-fluid" alt="">
+                    <form action="/business-dashboard.html">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" required placeholder="Enter First Name">
                         </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="video">
-                            <iframe src="https://www.youtube.com/embed/2NwSprLw2LI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" required placeholder="Enter Last Name">
                         </div>
-                        <div class="business-para">
-                            <p>
-                                Our goal is to change the way millions of parents are looking for things to do with kids, and connect them with business that cater to children, nationwide!
-                            </p>
-                            <p>Thank you to all publications and media outlets we have been featured in.</p>
-                            <p>Click on logos to view full articles about us</p>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="number" class="form-control" id="phone" required placeholder="Phone">
                         </div>
-                        <div class="parents-btns">
-                            <a href="#" class="btn btn-primary">Learn More</a>
-                            <a href="business-registeration.html" class="btn btn-primary">Sign Up</a>
-                            <a href="#" class="btn btn-primary">Explore</a>
+
+                        <div class="form-group">
+                            <label for="zip-code">Phone</label>
+                            <input type="number" class="form-control" id="zip-code" required placeholder="Zip Code">
                         </div>
-                    </div>
+
+                        <div class="form-group">
+                            <label for="numOfKids">Number Of Kids</label>
+                            <select class="form-select" id="numOfKids"> 
+                                <option value="" disabled selected="selected">Select Number Of Kids</option>
+                                <option value="1" >1</option>
+                            </select>
+                        </div>
+                        <div class="form-group d-flex justify-content-center">
+                            <button style="margin-top: 1rem;" type="submit " class="btn btn-primary ">+ Register</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
-
     </main>
 
 
@@ -159,66 +179,63 @@
     <!-- End #main -->
 
     <!-- ======= Footer ======= -->
-    <footer id="footer" class="footer">
-        <div class="footer-content">
-            <div class="container">
-                <div class="col-md-12 text-center">
+    <footer id="footer " class="footer ">
+        <div class="footer-content ">
+            <div class="container ">
+                <div class="col-md-12 text-center ">
                     <p>CONTACT US!</p>
-                    <div class="social-links">
-                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                    <div class="social-links ">
+                        <a href="# " class="facebook "><i class="fab fa-facebook-f "></i></a>
+                        <a href="# " class="twitter "><i class="fab fa-twitter "></i></a>
+                        <a href="# " class="instagram "><i class="fab fa-instagram "></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="down-footer">
+        <div class="down-footer ">
             <h6>info@boredomeraser.com</h6>
         </div>
     </footer>
     <!-- End Footer -->
-
-
     <!-- Footer Nav Bar -->
 
-    <div class="dekstop footer-nav-container">
+    <div class="dekstop footer-nav-container ">
         <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="parents.html">Parents</a></li>
-            <li><a href="businesses.html">Businesses</a></li>
-            <li><a href="media.html">Media</a></li>
-            <li><a href="marketplace.html">Marketplace</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html ">About</a></li>
+            <li><a href="parents.html ">Parents</a></li>
+            <li><a href="businesses.html ">Businesses</a></li>
+            <li><a href="media.html ">Media</a></li>
+            <li><a href="marketplace.html ">Marketplace</a></li>
+            <li><a href="blog.html ">Blog</a></li>
+            <li><a href="contact.html ">Contact</a></li>
         </ul>
     </div>
-    <div class="mobile footer-nav-container">
+    <div class="mobile footer-nav-container ">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="">Search</a></li>
-            <li><a href="bookings.html">Bookings</a></li>
-            <li><a href="favourite.html">Favorites</a></li>
-            <li><a href="profile.html">Profile</a></li>
+            <li><a href="index.html ">Home</a></li>
+            <li><a href=" ">Search</a></li>
+            <li><a href="bookings.html ">Bookings</a></li>
+            <li><a href="favourite.html ">Favorites</a></li>
+            <li><a href="profile.html ">Profile</a></li>
         </ul>
     </div>
-
 
     <!-- End Footer Nav Bar -->
 
-    <!-- <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
+    <!-- <a href="# " class="scroll-top d-flex align-items-center justify-content-center "><i class="bi bi-arrow-up-short "></i></a> -->
 
-    <div id="preloader"></div>
+    <div id="preloader "></div>
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="assets/vendor/aos/aos.js "></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js "></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js "></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js "></script>
+    <script src="assets/vendor/php-email-form/validate.js "></script>
 
     <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js "></script>
 
 </body>
 

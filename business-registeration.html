@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Businesses</title>
+    <title>Business Registeration</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+    <link href="assets/img/logo.png" rel="icon">
     <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
     <!-- Google Fonts -->
@@ -42,29 +42,22 @@
 
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top" data-scrollto-offset="0">
-        <div class="container-fluid d-flex align-items-center justify-content-between">
-
-            <!-- <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0"> -->
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <!-- <img src="assets/img/logo.png" alt="BoredomEraser"> -->
-            <!-- <h1>BoredomEraser<span>.</span></h1>-->
-            <!-- </a> -->
-
+        <div class="container-fluid d-flex align-items-center justify-content-center">
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto" href="index.html">Home</a></li>
                     <li><a class="nav-link scrollto" href="about.html">About</a></li>
                     <li><a class="nav-link scrollto" href="parents.html">Parents</a></li>
                     <li><a class="nav-link scrollto" href="businesses.html">Businesses</a></li>
-                    <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
-                        <!-- Uncomment the line below if you also wish to use an image logo -->
-                        <img src="assets/img/logo.png" alt="BoredomEraser">
-                        <!-- <h1>BoredomEraser<span>.</span></h1>-->
-                    </a>
                     <li><a class="nav-link scrollto" href="media.html">Media</a></li>
+                    <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+                        <img src="assets/img/logo.png" alt="BoredomEraser">
+                    </a>
                     <li><a class="nav-link scrollto" href="marketplace.html">Marketplace</a></li>
                     <li><a class="nav-link scrollto" href="blog.html">Blog</a></li>
                     <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+                    <li><a class="login-nav" href="login.html">Login/</a></li>
+                    <li><a class="sign-nav" href="signup.html">Signup</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle d-none"></i>
             </nav>
@@ -77,83 +70,75 @@
     <!-- ======= Second Nav Bar ======= -->
 
 
-    <section id="main-nav">
+
+    <!-- <section id="main-nav">
         <div id="sec-nav">
             <div class="page-name">
-                Home
+                About
             </div>
             <i class="mobile-toggle bi bi-list" aria-controls="sec-navigation" aria-expanded="false"> 
               </i>
-            <!-- <i class="mobile-toggle bi bi-list mobile-nav-toggle d-none"></i> -->
-            <!-- <button class="mobile-toggle"></button> -->
             <nav id="sec-navigation" class="sec-nav">
                 <ul class="flex sec-navigation" data-visible="false">
                     <li>
-                        <a class="sec-nav-active" href="index.html">
-                            <!-- <span aria-hidden="true"></span> Home -->
+                        <a href="index.html">
                             Home
                         </a>
                     </li>
                     <li>
                         <a href="search.html">
-                            <!-- <span aria-hidden="true"></span> Contact -->
                             Search
                         </a>
                     </li>
 
                     <li>
                         <a href="bookings.html">
-                            <!-- <span aria-hidden="true"></span> Contact -->
                             Bookings
                         </a>
                     </li>
                     <li>
                         <a href="favourite.html">
-                            <!-- <span aria-hidden="true"></span> Contact -->
-                            Favorites
+                            Favourite
                         </a>
                     </li>
 
                     <li>
                         <a href="profile.html">
-                            <!-- <span aria-hidden="true"></span> Contact -->
                             Profile
                         </a>
                     </li>
-
-                    <!--    <li><a href="signup.html">Signup/Login</a></li>-->
-
                 </ul>
             </nav>
         </div>
 
-    </section>
+    </section> -->
 
 
 
-    <main id="main">
-        <section>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="business-detail">
-                        <p>
-                            BUSINESS
-                            <br/> REGISTERATION
-                        </p>
-                    </div>
-                </div>
+    <div class="row mtop">
+        <div class="col-md-12">
+            <div class="business-detail">
+                <p>
+                    BUSINESS
+                    <br/> REGISTERATION
+                </p>
             </div>
+        </div>
+    </div>
+    <main class="index-main">
+        <!-- ======= Contact Section ======= -->
+        <section>
             <div class="container form-container">
                 <div class="row">
                     <form action="/business-dashboard.html">
                         <div class="form-group">
                             <label for="business-name">Business Name</label>
-                            <input type="email" class="form-control" id="business-name" aria-describedby="emailHelp" required placeholder="Enter email">
+                            <input type="text" class="form-control" id="business-name" required placeholder="Enter Business Name">
                         </div>
                         <div class="form-group">
                             <label for="number-of-years">Number Of Years In Business</label>
-                            <select required class="form-control" id="number-of-years">
-                              <option value="" >Number of Years In Business</option>
+                            <select required class="form-select" id="number-of-years">
+                              <option value="" disabled selected >Number of Years In Business</option>
                               <option value="1" >1</option>
                               <option value="2">2</option>
                               <option value="3">3</option>
@@ -163,13 +148,46 @@
                         </div>
                         <div class="form-group">
                             <label for="firstName">First Name</label>
-                            <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp" required placeholder="Enter First Name">
+                            <input type="text" class="form-control" id="firstName" required placeholder="Enter First Name">
                         </div>
                         <div class="form-group">
                             <label for="lastName">Last Name</label>
-                            <input type="text" class="form-control" id="lastName" aria-describedby="emailHelp" required placeholder="Enter Last Name">
+                            <input type="text" class="form-control" id="lastName" required placeholder="Enter Last Name">
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <div class="form-group">
+                            <!-- <label for="inputState">State</label> -->
+                            <select id="" class="form-select">
+                              <option value="" disabled selected>Do you use scheduling software?</option>
+                              <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required placeholder="Email">
+                        </div>
+                        <div>
+                            <p style="text-align: center;">
+                                Passwords must be <strong> at least 6 characters </strong> and contain:
+                                <br/> At least <strong> one uppercase letter, one lowercase letter, one number,</strong> and No <strong> special Characters. </strong> Password
+                            </p>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" required placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirm-password" required placeholder="Confirm Password">
+                        </div>
+                        <div class="form-check d-flex justify-content-center">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label style="padding-left: 10px;" class="form-check-label" for="defaultCheck1">
+                              I agree <strong> Boredom Eraser Agreement </strong>
+                            </label>
+                        </div>
+                        <div class="form-group d-flex justify-content-center">
+                            <button style="margin-top: 1rem;" type="submit " class="btn btn-primary ">+ Register</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -177,69 +195,76 @@
     </main>
 
 
+    <!-- ======= End Second Nav Bar ======= -->
+
+
+
+
+
+
+
+
+
     <!-- End #main -->
 
     <!-- ======= Footer ======= -->
-    <footer id="footer" class="footer">
-        <div class="footer-content">
-            <div class="container">
-                <div class="col-md-12 text-center">
+    <footer id="footer " class="footer ">
+        <div class="footer-content ">
+            <div class="container ">
+                <div class="col-md-12 text-center ">
                     <p>CONTACT US!</p>
-                    <div class="social-links">
-                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                    <div class="social-links ">
+                        <a href="# " class="facebook "><i class="fab fa-facebook-f "></i></a>
+                        <a href="# " class="twitter "><i class="fab fa-twitter "></i></a>
+                        <a href="# " class="instagram "><i class="fab fa-instagram "></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="down-footer">
+        <div class="down-footer ">
             <h6>info@boredomeraser.com</h6>
         </div>
     </footer>
     <!-- End Footer -->
-
-
     <!-- Footer Nav Bar -->
 
-    <div class="dekstop footer-nav-container">
+    <div class="dekstop footer-nav-container ">
         <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="parents.html">Parents</a></li>
-            <li><a href="businesses.html">Businesses</a></li>
-            <li><a href="media.html">Media</a></li>
-            <li><a href="marketplace.html">Marketplace</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html ">About</a></li>
+            <li><a href="parents.html ">Parents</a></li>
+            <li><a href="businesses.html ">Businesses</a></li>
+            <li><a href="media.html ">Media</a></li>
+            <li><a href="marketplace.html ">Marketplace</a></li>
+            <li><a href="blog.html ">Blog</a></li>
+            <li><a href="contact.html ">Contact</a></li>
         </ul>
     </div>
-    <div class="mobile footer-nav-container">
+    <div class="mobile footer-nav-container ">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="">Search</a></li>
-            <li><a href="bookings.html">Bookings</a></li>
-            <li><a href="favourite.html">Favorites</a></li>
-            <li><a href="profile.html">Profile</a></li>
+            <li><a href="index.html ">Home</a></li>
+            <li><a href=" ">Search</a></li>
+            <li><a href="bookings.html ">Bookings</a></li>
+            <li><a href="favourite.html ">Favorites</a></li>
+            <li><a href="profile.html ">Profile</a></li>
         </ul>
     </div>
-
 
     <!-- End Footer Nav Bar -->
 
-    <!-- <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
+    <!-- <a href="# " class="scroll-top d-flex align-items-center justify-content-center "><i class="bi bi-arrow-up-short "></i></a> -->
 
-    <div id="preloader"></div>
+    <div id="preloader "></div>
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="assets/vendor/aos/aos.js "></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js "></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js "></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js "></script>
+    <script src="assets/vendor/php-email-form/validate.js "></script>
 
     <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js "></script>
 
 </body>
 
