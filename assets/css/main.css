@@ -5407,3 +5407,16 @@ input[type=number] {
         margin-top: 0rem;
     }
 }
+@media only screen and (max-width: 375px) {
+    .buttonss {
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .buttonss {
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
