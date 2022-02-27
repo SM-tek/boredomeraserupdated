@@ -3422,6 +3422,7 @@ section {
 
 .price .ff {
     margin-top: -19px;
+    font-size: 15px;
 }
 
 .deals-title {
@@ -5420,3 +5421,48 @@ input[type=number] {
         justify-content: center !important;
     }
 }
+
+@media only screen and (max-width: 375px) {
+    .targetpasscheckbox .mr-sm-2 .form-check-label b {
+        margin-left: 2px !important;
+        color: black;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .targetpasscheckbox .mr-sm-2 {
+        color: black;
+        margin-left: 15px !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .targetpasscheckbox .mr-sm-2 {
+        color: black;
+        margin-left: 15px !important;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .targetpasscheckbox .mr-sm-2 {
+        color: black;
+        margin-left: 15px !important;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .targetpasscheckbox .mr-sm-2 {
+        color: black;
+        margin-left: 15px !important;
+    }
+}
+
+@media only screen and (max-width: 1653px) {
+    .targetpasscheckbox .mr-sm-2 {
+        color: black;
+        margin-left: 15px !important;
+    }
+}
+
+
+/* end of second */
