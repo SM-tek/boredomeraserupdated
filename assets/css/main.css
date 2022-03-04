@@ -5463,6 +5463,19 @@ input[type=number] {
         margin-left: 15px !important;
     }
 }
-
-
+/* @media only screen and (max-width: 1272px) {
+    .header .logo img{
+        display: none !important;
+    }
+} */
+@media only screen and (max-width: 1279px) {
+    .header .logo img{
+        max-height: 117px;
+        margin-right: 6px;
+        position: fixed;
+        top: 0;
+        left:calc(50% - 75px);
+        z-index: -1;
+    }
+}
 /* end of second */
