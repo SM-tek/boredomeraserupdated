@@ -280,7 +280,7 @@ section {
         justify-content: space-between;
         padding: 14px 20px;
         font-family: var(--font-secondary);
-        font-size: 12px;
+        font-size: 9px;
         font-weight: 700;
         color: rgba(var(--color-secondary-dark-rgb), 0.7);
         white-space: nowrap;
@@ -821,12 +821,12 @@ section {
 
 .service-item-main {
     display: inline-block;
-    width: 146px;
+    width: 134px;
     margin-bottom: 1rem;
     transition: all ease-in-out 0.4s;
     background: rgba(59, 62, 67, 255);
     border-radius: 10px;
-    height: 8.3rem;
+    height: 6.3rem;
     justify-content: center;
 }
 
@@ -1449,7 +1449,7 @@ section {
 }
 
 .testimonails-container {
-    height: 28rem;
+    height: 19rem;
 }
 
 .slide-testimonial {
@@ -3062,8 +3062,8 @@ section {
 #header {
     display: flex;
     align-items: center;
-    height: 7rem;
-    box-shadow: 0 2px #ff5fa2, 0 4px black;
+    height: 9.5rem;
+    /* box-shadow: 0 2px #ff5fa2, 0 4px black; */
 }
 
 #main {
@@ -5477,5 +5477,9 @@ input[type=number] {
         left:calc(50% - 75px);
         z-index: -1;
     }
+}
+.con{
+    font-weight: bold;
+    padding-top: 20px;
 }
 /* end of second */
