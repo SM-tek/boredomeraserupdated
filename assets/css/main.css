@@ -816,12 +816,14 @@ section {
 }
 
 .featured-services-row {
+    width: 92%;
+    margin-left: 64px;
     margin-bottom: 1rem;
 }
 
 .service-item-main {
     display: inline-block;
-    width: 134px;
+    width: 127px;
     margin-bottom: 1rem;
     transition: all ease-in-out 0.4s;
     background: rgba(59, 62, 67, 255);
@@ -857,6 +859,7 @@ section {
 }
 
 .featured-services .service-item h6 a {
+    font-size: 14px;
     color: white;
     transition: ease-in-out 0.3s;
 }
@@ -2093,6 +2096,8 @@ section {
 --------------------------------------------------------------*/
 
 #contact {
+    margin-left: 78px;
+    width: 87%;
     padding: 0;
     padding-top: 1rem;
 }
@@ -2141,6 +2146,7 @@ section {
 }
 
 .video {
+    width: 98%;
     display: flex;
     justify-content: center;
 }
@@ -2171,7 +2177,8 @@ section {
 .marketplace-para p,
 .business-para p,
 .parents-para p {
-    font-size: 17px;
+    font-size: 13px;
+    color: #889097;
     line-height: 28px;
 }
 
@@ -2725,15 +2732,18 @@ section {
 }
 
 .blog-img {
+    width: 101%;
     margin-bottom: 1rem;
-    height: 34rem;
+    height: 25rem;
     border: 9px solid white;
     box-shadow: 5px -4px 10px grey, 0px 4px 10px grey;
 }
 
 .blog-img img {
-    height: 100%;
-    width: 100%;
+    height: 101%;
+    width: 72%;
+    padding-left: 58px;
+    margin-left: 50px;
 }
 
 .blog-social-links ul {
@@ -3319,6 +3329,7 @@ section {
 }
 
 .main-deals {
+    width: 86%;
     border: 2px solid grey;
     display: flex;
     align-items: center;
@@ -3326,6 +3337,7 @@ section {
     position: relative;
     overflow: hidden;
     padding: 8px 0;
+    margin-left: 69px;
 }
 
 .deals-logo {
@@ -3436,6 +3448,7 @@ section {
 }
 
 .deals-title a {
+    padding-right: 125px;
     color: black;
     font-size: 17px;
     font-weight: 900;
@@ -3468,6 +3481,8 @@ section {
 }
 
 .deals-title h3 {
+    font-family: 'Poppins';
+    padding-right: 721px;
     text-align: center;
     font-weight: 900;
     font-size: 22px;
@@ -3641,6 +3656,7 @@ section {
 }
 
 .mama-saying-text-container h3 {
+    font-family: 'Poppins';
     font-size: 22px;
     font-weight: 900;
 }
@@ -3738,6 +3754,7 @@ button {
 }
 
 .btn-primary {
+    font-weight: bold;
     background-color: #ff9ac0;
     border: none;
 }
@@ -3876,6 +3893,8 @@ button {
 }
 
 .form-container {
+    padding-left: 63px;
+    width: 103%;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -5481,5 +5500,62 @@ input[type=number] {
 .con{
     font-weight: bold;
     padding-top: 20px;
+}
+.img-fluid-1{
+    margin-left: 132px !important;
+    max-width: 51% !important;
+}
+.g-5, .gy-5 {
+    width: 91% !important;
+    margin-left: 53px !important;
+}
+.featuredin {
+    width: 100%;
+    height: auto;
+    float: left;
+    text-align: center;
+    padding: .4rem 172px 1.4rem;
+    background-color: #f9f9f9;
+}
+.featuredin .logo-box-outer {
+    float: left;
+}
+.featuredin .logo-box {
+    width: 90%;
+    height: 100px;
+    margin-top: 10px;
+    overflow: hidden;
+    background: #fff;
+    border: solid 1px #efefef;
+    border-radius: 3px;
+  }
+.featuredin .logo-box img {
+    width: 186px;
+  }
+.img-icon1{
+    padding-top: 15px;
+}
+.form-box-modal h2, .new-modal h2 {
+    font-size: 3em !important;
+    text-align: center;
+}
+.sourcesanslight {
+    font-family: sourcesanslight !important;
+    letter-spacing: 4px;
+}
+.c-lightgray {
+    color: #737376;
+    text-align: center;
+}
+h2 {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 700 !important;
+}
+.form-box-modal h4, .new-modal h4 {
+    font-size: 14px;
+    text-align: center;
+}
+.c-pink {
+    color: #ff5ea1;
 }
 /* end of second */
