@@ -3453,7 +3453,8 @@ section {
 .deals-title a {
     padding-right: 125px;
     color: black;
-    font-size: 17px;
+    font-family: 'Poppins';
+    font-size: 22px;
     font-weight: 900;
     position: absolute;
     right: 10%;
