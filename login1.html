@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>About</title>
+    <title>Login</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -30,12 +30,62 @@
     <!-- Template Main CSS Files -->
     <link href="assets/css/variables.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
+    <style>
+        .content .col h2 {
+    margin: auto;
+    font-size: 3em;
+    text-shadow: 1px 1px #ffffff;
+    text-align: center;
+    font-weight: 800 !important;
+}
+/* .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+
+    line-height: 1.1;
+
+} */
+        /* .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9 {
+    position: relative;
+    width: 100%;
+} */
+        .content .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    float: left;
+    overflow: hidden;
+}
+        .content .col.one {
+    background-image: url(/web/20210420202523im_/https://boredomeraser.com/public/images/home1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+        .container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+        .content {
+    width: 100%;
+    /* height: 55%; */
+    float: left;
+    padding: 1.2rem 0 !important;
+}
+@media (min-width: 1200px){
+.container {
+    width: 1140px;
+    /* max-width: 100%; */
+}}
+    </style>
     <!-- =======================================================
   * Template Name: BoredomEraser - v1.0.0
   * Template URL: https://bootstrapmade.com/BoredomEraser-bootstrap-business-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
 </head>
 
 <body>
@@ -46,7 +96,7 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-                    <li><a class="nav-link scrollto active" href="about.html">About</a></li>
+                    <li><a class="nav-link scrollto" href="about.html">About</a></li>
                     <li><a class="nav-link scrollto" href="parents.html">Parents</a></li>
                     <li><a class="nav-link scrollto" href="businesses.html">Businesses</a></li>
                     <li><a class="nav-link scrollto" href="media.html">Media</a></li>
@@ -56,7 +106,7 @@
                     <li><a class="nav-link scrollto" href="marketplace.html">Marketplace</a></li>
                     <li><a class="nav-link scrollto" href="blog1.html">Blog</a></li>
                     <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
-                    <li><a class="login-nav" href="login.html">SignIn/</a></li>
+                    <li><a class="login-nav active" href="login.html">SignIn/</a></li>
                     <li><a class="sign-nav" href="signup.html">Signup</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle d-none"></i>
@@ -113,6 +163,37 @@
 
     </section> -->
 
+    <!-- <form id="modal-form-parent-login" class="form form-wid" method="POST" action="https://web.archive.org/web/20210513065321/https://boredomeraser.com/api/ajax-parent-login">
+        <input type="hidden" name="_token" value="AgpoCfPVrrQe66ONbGH7ptaGvqNETyy22la9ei14">
+        <input type="hidden" name="c_lat" value="">
+        <input type="hidden" name="c_long" value="">
+    <div class="form-group signup">
+        <h2 class="c-lightgray sourcesanslight">LOGIN</h2>
+    </div>
+    <div class="form-group signup">
+        <h4 class="c-lightgray">Please enter your e-mail and password</h4>
+    </div>    
+    <div class="form-group signup">
+        <input type="text" name="email" class="form-control " placeholder="Email Address">
+    </div>
+     <div class="form-group signup">
+        <input type="password" name="password" class="form-control " placeholder="Password">
+    </div>
+
+    <div class="form-group">
+        <h6 class="c-lightgray"><span class="c-pink">*</span> Email and Password are Case-Sensitive.</h6>
+        <h6 class="c-lightgray"><span class="c-pink">**</span> Forgot your password? 
+            <a class="c-pink pointer modal-forget-password"><span class="c-pink"><b>Click here</b></a></span> </h6>
+    </div>  
+
+    <div class="form-group text-center parent-login">
+        <input type="submit" class="btn blue btn-default" style="cursor: pointer;" value="LOGIN">
+        <br><br>
+        <h6 class="c-lightgray">If you don't have account <a class="signupmodal pointer" style="text-decoration: underline;"><span class="c-pink">Sign Up</span></a> here </h6>
+    </div>
+
+    </form> -->
+
     <div class="main-about-our-business1">
         <div class="inner-our-business1">
             <!-- <div class="intro">
@@ -128,79 +209,42 @@
 
         </div>
     </div>
-
-    <main class="index-main mtop">
-        <!-- ======= Contact Section ======= -->
-        <section id="contact">
-            <div class="container contact">
-                <div class="row">
-                    <div class="col-lg-5 col-md-5 col-sm-5 col-12">
-                        <div class="contact-img">
-                            <img src="assets/img/blog/WhatsApp Image 2020-04-29 at 10.14.16 AM.jpeg" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-md-7 col-sm-7 col-12 media-text-container">
-                        <div class="contact-para">
-                            <p>
-                                Welcome to our Blog!
-
-                            </p>
-                            <p>My name is Marta, I am the founder of Boredom Eraser and a busy mom of three. I love helping businesses reach their true potential. I spent the majority of my career as a business owner, in the marketing industry, gaining experiences in areas such as affiliate marketing, project management, and prospecting. Being hands-on in every aspect of the business is my priority. Juggling work and family I always try to find ways to simplify my busy life, like any mom. At the end of the day we all want to have some free time to ourselves this is how Boredom Eraser came to life. Through my vision and hard work, I have changed how parents find and book things to do with kids.</p>
-                            <a href="#" class="btn btn-primary" >Blogs</a>
-                        </div>
-                        <div class="parents-btns">
-                            <!-- <a href="#" class="btn btn-primary">Learn More</a> -->
-                            <!-- <a href="#" class="btn btn-primary" style="padding-bottom: 50%;" >Blogs</a> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="blog">
-            <div class="blog-heading">
-                <h3>Blog</h3>
-            </div>
-            <div class="blog-container">
-                <div class="blog-box">
-                    <div class="blog-img">
-                        <img src="assets/img/blog/133BFBA9-D102-4994-A094-26CD72DE9C30.jpeg" alt="blog" style="height: 200px;">
-                    </div>
-                    <div class="blog-text">
-                        <span>18 July 2021/ Web Design</span>
-                        <a href="#" class="blog-title">What Has Happened of All of the web Design Ideas?</a>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, provident quidem corrupti officiis aliquam rerum officia consequuntur voluptatibus, laboriosam a quae animi hic culpa, fuga inventore. Voluptate odit nemo nesciunt.
-                        </p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-                <div class="blog-box">
-                    <div class="blog-img">
-                        <img src="assets/img/blog/30FreeKidsActivities.jpg" alt="blog" style="height: 200px;">
-                    </div>
-                    <div class="blog-text">
-                        <span>18 July 2021/ Web Design</span>
-                        <a href="#" class="blog-title">What Has Happened of All of the web Design Ideas?</a>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, provident quidem corrupti officiis aliquam rerum officia consequuntur voluptatibus, laboriosam a quae animi hic culpa, fuga inventore. Voluptate odit nemo nesciunt.
-                        </p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-                <div class="blog-box">
-                    <div class="blog-img">
-                        <img src="assets/img/blog/Untitled-design.png" alt="blog" style="height: 200px;">
-                    </div>
-                    <div class="blog-text">
-                        <span>18 July 2021/ Web Design</span>
-                        <a href="#" class="blog-title">What Has Happened of All of the web Design Ideas?</a>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, provident quidem corrupti officiis aliquam rerum officia consequuntur voluptatibus, laboriosam a quae animi hic culpa, fuga inventore. Voluptate odit nemo nesciunt.
-                        </p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-            
-        </section>
+    <main class="index-main mtop" style="margin-top:15% !important">
         
+        <div class="content">
+            <div class="container">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col one">
+                    <h2><span>PARENTS</span></h2>
+                    <div class="overlay">
+                        <div>
+                            <div class="plus">
+                                <h3 class="c-pink"><b>+</b></h3>
+                            </div>
+                            <div>
+                                <h6 class="text xs">
+                                    <a href="https://web.archive.org/web/20190618180536/http://www.boredomeraser.com/parents" class="c-white"><b>LET'S GET STARTED</b></a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col two">
+                    <h2><span>BUSINESSES</span></h2>
+                    <div class="overlay">
+                        <div>
+                            <div class="plus">
+                                <h3 class="c-pink"><b>+</b></h3>
+                            </div>
+                            <div>
+                                <h6 class="text xs">
+                                    <a href="https://web.archive.org/web/20190618180536/http://www.boredomeraser.com/businesses" class="c-white"><b>LET'S GET STARTED</b></a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
 
@@ -217,7 +261,7 @@
     <!-- End #main -->
 
     <!-- ======= Footer ======= -->
-    <footer id="footer" class="footer" >
+    <footer id="footer" class="footer" style="margin-top: 27%;">
         <div class="footer-content">
             <div class="container">
                 <div class="col-md-12 text-center">
