@@ -30,6 +30,115 @@
     <!-- Template Main CSS Files -->
     <link href="assets/css/variables.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
+    <style>
+        a {
+    color: var(--color-links);
+}
+        .c-green{
+            color: #78e0bd;
+        }
+        .text.xs {
+    line-height: 1.6;
+    font-size: 1em;
+}
+        .content .overlay h6 {
+    letter-spacing: .2rem !important;
+}
+        b, strong {
+    font-weight: bolder;
+}
+        .c-pink {
+    color: #ff5ea1;
+}
+        .content .overlay .plus {
+    text-align: center;
+    position: relative;
+    top: -8rem;
+    transition: all .4s;
+}
+        .content .col h2 {
+    margin: auto;
+    font-size: 3em;
+    text-shadow: 1px 1px #ffffff;
+    text-align: center;
+    font-weight: 800 !important;
+    line-height: 1.1;
+}
+        .content .col h2 span {
+    color: #78e0bd;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+}
+        .content .overlay .plus {
+    text-align: center;
+    position: relative;
+    top: -8rem;
+    transition: all .4s;
+}
+        .content .overlay {
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute !important;
+    z-index: 555 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    transform: scale(1.1) !important;
+    opacity: 0 !important;
+    transition: all .4s !important;
+    background-color: rgba(59, 62, 67, 0.85) !important;
+}
+        .content .col h2 {
+    margin: auto;
+    font-size: 3em;
+    text-shadow: 1px 1px #ffffff;
+    text-align: center;
+    font-weight: 800 !important;
+}
+/* .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+
+    line-height: 1.1;
+
+} */
+        /* .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9 {
+    position: relative;
+    width: 100%;
+} */
+        .content .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    float: left;
+    overflow: hidden;
+}
+        .content .col.one {
+    background-image: url(/web/20210420202523im_/https://boredomeraser.com/public/images/home1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+        .container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+        .content {
+    width: 100%;
+    /* height: 55%; */
+    float: left;
+    padding: 10.2rem 0 !important;
+}
+@media (min-width: 1200px){
+.container {
+    width: 1140px;
+    /* max-width: 100%; */
+}}
+    </style>
     <!-- =======================================================
   * Template Name: BoredomEraser - v1.0.0
   * Template URL: https://bootstrapmade.com/BoredomEraser-bootstrap-business-template/
@@ -57,8 +166,9 @@
                     <li><a class="nav-link scrollto" href="marketplace.html">Marketplace</a></li>
                     <li><a class="nav-link scrollto" href="blog1.html">Blog</a></li>
                     <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
-                    <li><a class="login-nav active" href="login.html">SignIn/</a></li>
-                    <li><a class="sign-nav" href="signup.html">Signup</a></li>
+                    <li><a class="login-nav" href="login1.html">SignIn/</a></li>
+                    <li><a class="sign-nav" href="signup1.html">Signup</a></li>
+
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle d-none"></i>
             </nav>
@@ -145,37 +255,74 @@
 
     </form> -->
 
-
-    <main class="index-main mtop" style="margin-top:15% !important">
-        <section style="margin-bottom: 1rem;">
-            <div class="login-form-container">
-                <form action="index2.html">
-                    <div class="form-group">
-                        <h2 class="c-lightgray sourcesanslight" style="font-size: 3rem; padding: 7%;">PARENT SIGN IN</h2>
-                        <h4 class="c-lightgray" style="font-size: 17px;">Don't have an account yet?</h4>
-                        <h6 style="padding-left: 43%;"><a class="signupmodal pointer" style="text-decoration: underline;" href="#"><span class="c-pink">Sign Up</span></a></h6>
-                        <!-- <label for="exampleInputEmail1">Email address</label> -->
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="Email Address">
-                    </div>
-                    <br />
-                    <div class="form-group" >
-                        <!-- <label for="exampleInputPassword1">Password</label> -->
-                        <input type="password" class="form-control" id="exampleInputPassword1" required placeholder="Password">
-                        
-                        <!-- <h6 class="c-lightgray" style="padding-top: 5%;"><span class="c-pink" >*</span> Email and Password are Case-Sensitive.</h6>
-                        <h6 class="c-lightgray" ><span class="c-pink">**</span> Forgot your password? 
-                            <a class="c-pink pointer modal-forget-password"><span class="c-pink"><b>Click here</b></a></span> </h6> -->
-                    </div>
-                    <br />
-                    <div style="display: flex; justify-content: center;">
-                        <button type="submit" class="btn btn-primary">Sign In</button>
-                        
-                    </div>
-                    <h6 style="padding-left: 37%; margin-top: 4%; font-size: 13px;"><a class="signupmodal pointer" style="text-decoration: underline;" href="#"><span class="c-pink">FORGOT PASSWORD</span></a></h6>
-                </form>
+    <div class="main-about-our-business">
+        <div class="inner-our-business">
+            <div class="intro" style="letter-spacing: 1px;">
+                <p>
+                    <span> Boredom Eraser </span> one stop connection to all kids activities around town. Search for birthday venues and entertainment, indoor play, virtual classes and free events, after school activities, camps and more to keep kids
+                    active.
+                </p>
+                <p>
+                    Website allows you to preview business services in your area. Creating your profile gives you full access to view exclusive deals, book and pay for classes and admissions on one site, stress-free.
+                </p>
+                <h6>ENDLESS FUN ON CRUISIVE CONTROL!</h6>
             </div>
 
-        </section>
+        </div>
+    </div>
+
+    <!-- <div class="main-about-our-business1">
+        <div class="inner-our-business1">
+            <div class="intro">
+                <p>
+                    <span> Boredom Eraser </span> one stop connection to all kids activities around town. Search for birthday venues and entertainment, indoor play, virtual classes and free events, after school activities, camps and more to keep kids
+                    active.
+                </p>
+                <p>
+                    Website allows you to preview business services in your area. Creating your profile gives you full access to view exclusive deals, book and pay for classes and admissions on one site, stress-free.
+                </p>
+                <h6>ENDLESS FUN ON CRUISIVE CONTROL!</h6>
+            </div>
+
+        </div>
+    </div> -->
+    <div class="content">
+        <div class="container">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col one" >
+                <h2><a href="signup.html"class="c-white" class="c-green"><b>PARENTS</b></a></h2>
+                <div class="overlay">
+                    <div>
+                        <div class="plus">
+                            <h3 class="c-pink"><b>+</b></h3>
+                        </div>
+                        <div>
+                            <h6 class="text xs">
+                                <a href="login.html" class="c-white"><b>PARENTS</b></a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col two">
+                <h2>                                    <a href="signup1.html" class="c-white"><b>BUSINESSES</b></a></h2>
+                <div class="overlay">
+                    <div>
+                        <div class="plus">
+                            <h3 class="c-pink"><b>+</b></h3>
+                        </div>
+                        <div>
+                            <h6 class="text xs">
+                                <a href="signup.html" class="c-white"><b>BUSINESSES</b></a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="index-main mtop" style="margin-top:11% !important">
+        
+ 
     </main>
 
 
@@ -192,7 +339,7 @@
     <!-- End #main -->
 
     <!-- ======= Footer ======= -->
-    <footer id="footer" class="footer">
+    <footer id="footer" class="footer" style="margin-top: 27%;">
         <div class="footer-content">
             <div class="container">
                 <div class="col-md-12 text-center">

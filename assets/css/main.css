@@ -3517,6 +3517,7 @@ section {
     }
     .main-deals {
         padding-right: 2%;
+        margin: auto;
     }
     .price .current {
         font-size: 24px;
@@ -5184,9 +5185,11 @@ iframe {
 }
 
 .login-form-container {
+    box-shadow: 0 0 19px 5px rgb(0 0 0 / 10%);
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    padding: 50px 50px 50px 50px;
 }
 
 .admin-form-body {
@@ -5704,4 +5707,26 @@ ul{
         padding:20px;
     }
 }
+@media screen and (max-width: 375px){
+    .featured-services-row {
+        margin-left: 40px;
+    }}
+@media screen and (max-width: 390px){
+    .featured-services-row {
+        margin-left: 53px;
+}}
+@media screen and (max-width: 393px){
+    .featured-services-row {
+        margin-left: 50px;
+}}
+@media screen and (max-width: 360px){
+    .featured-services-row {
+        margin-left: 40px;
+}}
+@media screen and (max-width: 414px){
+    .deals-title h3 {
+        padding-right: 44%;
+}}
+
+
 /* end of second */
