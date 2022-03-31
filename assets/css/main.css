@@ -3133,7 +3133,7 @@ section {
 
 @media screen and (max-width:1940px) {
     .index-main {
-        max-width: 50%;
+        max-width: 58%;
     }
 }
 
@@ -3180,7 +3180,7 @@ section {
 }
 @media screen and (max-width:1220px) {
     .index-main {
-        max-width: 87%;
+        max-width: 100%;
     }
 }
 
