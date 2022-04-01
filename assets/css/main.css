@@ -3257,7 +3257,7 @@ section {
 
 .page-name {
     width: 100%;
-    margin: 5rem;
+    margin: 13%;
     color: white;
 }
 
@@ -3270,7 +3270,7 @@ section {
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-right: 5rem;
+    margin-right: 9rem;
     z-index: 10000;
 }
 
