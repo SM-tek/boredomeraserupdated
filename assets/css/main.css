@@ -259,7 +259,7 @@ section {
   # Desktop Navigation 
   --------------------------------------------------------------*/
 
-@media (min-width: 1280px) {
+@media (min-width: 970px) {
     .navbar {
         padding: 0;
     }
@@ -427,7 +427,7 @@ section {
   # Mobile Navigation
   --------------------------------------------------------------*/
 
-@media (max-width: 1279px) {
+@media (max-width: 970px) {
     .navbar {
         position: fixed;
         top: 0;
@@ -3139,7 +3139,7 @@ section {
 
 @media screen and (max-width:1840px) {
     .index-main {
-        max-width: 54%;
+        max-width: 68%;
     }
 }
 
@@ -3192,7 +3192,7 @@ section {
 
 @media screen and (max-width:900px) {
     .index-main {
-        max-width: 86%;
+        max-width: 94%;
     }
 }
 
@@ -3838,7 +3838,7 @@ button {
     background-color: #485461;
     background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
     height: 113px;
-    margin-top: 52px;
+    margin-top: 4.3%;
 }
 
 .dashboard-header {
@@ -5498,7 +5498,7 @@ input[type=number] {
         display: none !important;
     }
 } */
-@media only screen and (max-width: 1279px) {
+@media only screen and (max-width: 970px) {
     .header .logo img{
         max-height: 117px;
         margin-right: 6px;
